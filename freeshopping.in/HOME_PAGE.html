@@ -1,0 +1,1998 @@
+<html>
+ <head>
+       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="head_elements.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.js"></script>
+
+    <style>
+        .body_style
+        {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 1;
+            z-index:1000;
+        }
+        .custom_card
+        {
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.3);
+        }
+        .product_card
+        {
+            transition:0.6s;
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.3);
+        }
+        .product_card:hover
+        {
+            transition:0.6s;
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.5);
+        }
+        .custom_hover
+        {
+            transition:0.3s;
+            color:white;
+            text-decoration: none;
+            font-weight: bold;
+        } 
+        .custom_hover:hover
+        {
+            transition:0.3s;
+            font-weight: bold;
+            color:black;
+            text-decoration: none;
+        } 
+        .custom_hover1
+        {
+            transition:0.3s;
+            color:gray;
+            text-decoration: none;
+            font-weight: bold;
+        } 
+        .custom_hover1:hover
+        {
+            transition:0.3s;
+            font-weight: bold;
+            color:black;
+            text-decoration: none;
+        } 
+        .searchip
+        {
+            padding:5px ;
+            width:56%;
+            transition: 0.5s;
+            border:0;
+            border-radius: 20px;
+
+        }
+        .searchip:focus
+        {
+            transition: 0.5s;
+            width:88%;
+        }
+        #searchbtn
+        {
+            transition: 0.5s;
+            width:60px;
+            height:60px;
+            text-align: center;
+            border-radius: 100%;
+            background-color: transparent;
+        }
+        #searchbtn:hover
+        {
+            transition: 0.5s;
+            width:60px;
+            height:60px;
+            border-radius: 100%;
+            background-color: lightgreen;
+        }
+        .css_triangle
+        {
+            height:0;
+            width:0;
+            border-bottom: 40px solid transparent;
+            border-top:  40px solid transparent;
+            border-right:  40px solid transparent;
+            border-left:  40px solid #623AE5;
+            
+        }
+        
+        .verified_div
+        {
+            margin-bottom: 100px;
+            transition:1s;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border:1px solid black;
+            background-color: #FFEB3B;
+            width:110px;
+            height:60px;
+            text-align: center;
+            color: black;
+        }
+
+        .v_image_text
+        {
+            transition:1s;
+            color:black;
+            opacity:1px;
+            width:20px;
+            height:20px; 
+        }
+        .c_buttons
+        {
+            transition:0.5s;
+            border-radius: 30px;
+            border:0px;
+            height:50px;
+            width:300px;
+            color:black;
+            font-family: aclonica;
+            background-color: #FFEA00;
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.3);
+        }
+        .c_buttons:hover
+        {
+            transition:0.5s;
+            border-radius: 30px;
+            border:0px;
+            height:50px;
+            width:320px;
+            color:white;
+            font-family: aclonica;
+            background-color: #2196f3;
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.5);
+        }
+        .load_more
+        {
+            transition:0.5s;
+            border-radius: 30px;
+            background-color: #2196f3;
+            color:white;
+            width:40%;
+            height:60px;
+            border:0;
+            font-family: bangers;
+            font-size: 30px;
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.3);
+        }
+        .load_more:hover
+        {
+            transition:0.5s;
+            border-radius: 10px;
+            background-color: #FFEA00;
+            color:black;
+            width:40%;
+            height:60px;
+            border:0;
+            box-shadow: 0 4 8 0 rgba(0,0,0,0.5);
+        }
+        .footer_row
+        {
+            visibility: hidden;
+        }
+        .about_us_font
+        {
+            color:transparent;
+            font-size: 18px;
+        }
+        .about_us_div
+        {
+            transition: 0.5s;
+            vertical-align: bottom;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            height:30px;
+            background-color: #2196f3;
+            text-align: center;
+            width: 520px;
+
+        }
+        .signup_button
+        {
+            border:0;
+            border-radius:10px;
+            font-size: 15px; 
+            color:transparent;
+            background-color: transparent;
+        }
+        .about_us_div:hover
+        {
+            height:170px;
+        }
+        .about_us_div:hover .signup_button
+        {
+            transition: 0.8s;
+            color:white;
+            background-color: #2196f3;
+        }
+        .about_us_div:hover .about_us_font
+        {
+            transition:2s;
+            color:white;
+        }
+
+        .about_us_div:hover .footer_row
+        {
+            visibility: visible;
+        }
+        .signup_input
+        {
+            background-color: transparent;
+            border:0;
+            border-radius: 20px;
+            padding: 7px 7px;
+        }
+        .about_us_div:hover .signup_input
+        {
+            transition: 0.5s;
+            background-color: white;
+        }
+        .signup_input:focus
+        {
+            transition: 0.3s;
+            padding: 7px 40px;
+        }
+        .slide
+        {
+            height:auto;
+            width:100%;
+            overflow: hidden;
+        }
+            
+    </style>
+
+    
+    <script>
+    $(document).ready(function(){
+    $('.slide').cycle({ 
+   fx : 'fade,zoom,turnDown,curtainX,uncover,curtainY',
+   randomizeEffects: 1,
+   requeueOnImageNotLoaded: true,
+   pause: 0,
+   pauseOnPagerHover: 0,
+    sync:  true, 
+    delay: -2000 
+
+        });
+    });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+           $("#std_div").hide();
+           $("#navbar_div").mouseover(function(){
+            $("#std_div").slideDown();
+           }) ;
+        });
+        </script>
+<script>
+        $(document).ready(function(){
+           $(".head_elements3").mouseover(function(){
+            $(".arrow_img").fadeOut();
+           });
+           $(".head_elements3").mouseleave(function(){
+            $(".arrow_img").fadeOut();
+            setTimeout(fadder,500);
+           });
+           function fadder()
+        {
+            $(".arrow_img").fadeOut();
+            $(".arrow_img").fadeIn(1000)
+        }
+        });
+
+        </script>
+ </head> 
+<body style="position: absolute;;background-image: url('logo1.png');background-repeat: repeat;background-size: contain;">
+<div style="width: auto;height: auto;text-align: center">
+    <center>
+    <table border="0" style="width: 100%;border-collapse: collapse;">
+        <tr style="text-align: right;">
+            <td>
+                <center>
+                <div class="custom_card" style="margin-left: 200px;transition: 0.5s;width: 688px;height: auto;text-align: center;border-radius: 20px;">
+                   <pre> <img src="logo.png" width="680" height="147" style='border-radius: 20px;' class="logo_img"></pre>
+                </div>
+            </center>
+            </td>
+
+
+            <td align="right">
+                <table style="width:100%;border-collapse: collapse;" border="0" cellpadding="3px;">
+                    <tr style="text-align: right;">
+                        <td align="right">
+                                <div class="head_elements">
+                                        <table border="0" style="width:100%">
+                                                <tr>
+                                                    <td align="left">
+                                                        <img src="lock.png" height="50px" width="60px" style="border-radius: 100%">
+                                                    </td>
+                                                    <td align="left">
+                                                            <a href="#" class="loginn"><br><b>Login</b></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                    <tr style="text-align: right;">
+                            <td align="right">
+                                    <div class="head_elements1">
+                                            <table border="0" style="width:100%">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <img src="register.png" height="50px" width="40px" style="border-radius: 100%">
+                                                        </td>
+                                                        <td align="left">
+                                                                <a href="#" class="loginn" ><br><b>Register</b></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                        </div>
+                            </td>
+                        </tr>
+
+                        <tr style="text-align: right;">
+                                <td align="right">
+                                        <div class="head_elements2">
+                                                <table border="0" style="width:100%">
+                                                    <tr>
+                                                        <td align="left">
+                                                            <img src="flight.png" height="30px" width="40px" style="border-radius: 100%">
+                                                        </td>
+                                                        <td align="left">
+                                                                <a href="#" class="loginn"><br><b>Career</b></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                </table>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2">
+                    <div class="head_elements3">
+                            <table border="0" style="width:99%">
+                                <tr>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-twitter"></a>
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-facebook"></a>
+                                    </td>
+                                    <td align="right">
+                                        <img src="right_arrow.png" height="30px" width="40px" style="border-radius: 100%" class="arrow_img">    
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-linkedin"></a>
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-google"></a>
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-pinterest"></a>
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-instagram"></a>
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-youtube"></a>
+                                    </td>
+                                    <td align="left">
+                                        <a href="#" class="fa fa-foursquare"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+            </td>
+        </tr>
+    </table>
+</center>
+</div>
+<br>
+
+
+<!-- START OF BODY FROM NAVIGATION BAR-->
+<div style="width: auto;height: auto;text-align: center;" id="navbar_div" >
+    <center>
+    <table border="0" style="border-collapse: collapse;width:80%;text-align: center;">
+        <tr>
+            <td>
+                <div class="w3-bar w3-blue w3-card-4 "  style="border-radius:20px;width:auto;">
+                        <center>
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-button w3-text-white w3-hover-green" style="text-decoration: none;"><i class="fa fa-home w3-xlarge"></i><font class="custom_hover"> Home</font></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-text-white w3-button w3-hover-green" style="text-decoration: none;"><i class="fa fa-check-circle w3-xlarge"></i><font class="custom_hover">Mobile Recharge</font></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-text-white w3-button w3-hover-green" style="text-decoration: none;"><i class="fa fa-desktop w3-xlarge"></i><font class="custom_hover"> Electronics</font></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-text-white w3-button w3-hover-green" style="text-decoration: none;"><i class="fa fa-align-center w3-xlarge"></i><font class="custom_hover">Resturants</font></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-text-white w3-button w3-hover-green" style="text-decoration: none;"><i class="fa fa-car w3-xlarge"></i><font class="custom_hover">Travel</font></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-text-white w3-button w3-hover-green" style="text-decoration: none;"><i class="fa fa-certificate w3-xlarge"></i><font class="custom_hover">Groceries</font></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="w3-bar-item w3-text-white w3-button w3-hover-green" style="text-decoration: none;"><i class="
+                                                fa fa-child w3-xlarge"></i><font class="custom_hover">Freebies</font></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td align="left" colspan="4">
+                                                <form action="www.google.com">
+                                                    <button type="submit" style="background-color: transparent;border:0;" ><i class="fa fa-search w3-xlarge w3-text-white" id="searchbtn"></i></button><input type="text" class="searchip" placeholder="Search..." autocomplete="on">
+                                                </form>
+                                            </td>
+                                            <td colspan="3" align="center">
+                                                    <div class="w3-dropdown-hover" style="width:100%;border-radius: 40px;background-color: transparent;">
+                                                            <button class="w3-button " style="width:100%;color: white;border-radius: 40px;background-color: tomato;height:63px;width: 300px;"><i class="fa fa-filter w3-xlarge w3-text-white"></i>Try Filtering !</button>
+                                                            <div class="w3-dropdown-content w3-bar-block w3-border w3-animate-zoom w3-light-grey" style="width:29.7%;border-radius: 20px;z-index:2000;">
+                                                                <table border="0" style='text-align:center;border-collapse: collapse;width: 100%;border-radius:40px;' align="center">
+                                                                    <tr>
+                                                                        <td>
+                                                                         <a href="#" class="w3-bar-item w3-button w3-hover-yellow" style="border-radius: 40px;" >All</a>
+                                                                            
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <td align="center">
+                                                                                    <a href="#" class="w3-bar-item w3-button w3-hover-yellow" style="border-radius: 40px;">Deals</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td align="center">
+                                                                                        <a href="#" class="w3-bar-item w3-button w3-hover-yellow" style="border-radius: 40px;">Offers</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                    <td align="center">
+                                                                                            <a href="#" class="w3-bar-item w3-button w3-hover-yellow" style="border-radius: 40px;">Coupons</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                </table>
+                                                            </div>
+                                                          </div> 
+                                            </td>
+                                        </tr>
+                                </table>
+                            </center>
+                </div>
+            </td>
+        </tr>
+        <tr style="height:107px;">
+            <td colspan="7" align="center">
+                <div style="background-color: greenyellow;height:auto;width:20%;box-shadow: 0 4 8 0 rgba(0,0,0,0.2);border-radius: 30px;" id="std_div">
+                    <a href="#" style="text-decoration: none"><br><font style="font-weight: bold;" class="custom_hover1"><i class="fa fa-book w3-xlarge"></i>Student's Discount</font><br><br></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</center>
+</div>
+<br>
+<center>
+<div style="width:70%;height:53%;;border-radius: 20px;" class="custom_card">
+<table border="0" style="width:100%;height:100%;border-collapse: collapse;">
+   
+    <tr>
+        <td>
+            <div class="slide">
+               <img src="http://freeshopping.co/wp-content/uploads/2018/09/e-coupan-final.jpg" width="100%" height="418px;"  style="border-radius: 20px;">
+                    <img src="flight_ticket.png" width="100%" height="418px"  style="border-radius: 20px;">
+                     <img src="slide_img3.png" width="100%" height="418px"  style="border-radius: 20px;">
+            </div>
+            
+        </td>
+    </tr>
+</table>
+</div>
+<br>
+
+<div style="width:100%;height:auto;background-color: transparent">
+        <center>
+    <table border="0" style="border-collapse: collapse;width:80%;text-align: center;">
+        <tr >
+            <td>
+               
+            </td>
+            <td style="background-image: url('bookmark.jpg');background-repeat: no-repeat;text-align: center;background-size:100% 60%;background-position-x: center;background-position-y: center;">
+                  <table border="0" align="center" style='border-collapse:collapse;'>
+                      <tr>
+                          <td>
+                              <br>
+                              <br>
+                                <font style="font-family: Bangers;color:White;font-size: 80px;">Home Page</font>
+                          </td>
+                          <td>
+                              <br>
+                              <br>
+                                <img src="home_page_offer_img.png" width="250px" height="200px">
+                          </td>
+                      </tr>
+                  </table>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+</center>
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+
+
+ <!-- ##########################################################   OFFER CARD 1    ################################################################-->
+<div style="width:100%;height:auto;">
+    <table border="0" style="width:65%;border-collapse: collapse;margin-left:210px " align="left">
+        <tr>
+            <td colspan="2">
+                    <div style="width:100%;height: auto;">
+                            <table border="0" style="border-collapse: collapse;width:100%;">
+                              
+                                <tr>
+                                    <td align="right" style="width:1200px;">
+                                        <div style="text-align:left;height:80px;width:1000px;background-image: url('products_tag.jpg');background-repeat: no-repeat;background-size:cover;">
+                                           <font style="font-family: Aclonica;color: white;font-weight: bold;background-position-x: center;font-size: 50">
+                                               <p style="text-align: left;padding-top: 20px;padding-left:20px"> <i> Offers </i></p>
+                                           </font>
+                                        </div>
+                                        </td>
+                                        <td align="left">
+                                        <div class="css_triangle">      
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                            <br>
+                            <br>   
+                           </div>
+                           <br>
+            </td>
+        </tr>
+        
+        
+        <tr>
+            <td style="vertical-align: middle;width:120px" align="right">
+                
+                    <div class="verified_div" id="vdiv">
+                        <br>
+                            <table border="0" align="center">
+                                    <tr>
+                                        <td>
+                                                <img src="check.png" class="v_image_text" id="vit">                
+                                        </td>
+                                        <td>
+                                               <font class="v_image_text" id="vit1"> Verified</font> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            
+                        </div>
+            </td>
+            <td>
+                    <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFDE ;border-bottom-right-radius: 40px" class="product_card">
+                        <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                            <tr>
+                                <td style="width:350px;">
+                                    <img src="products/beauty.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                                </td>
+                                <td style="vertical-align: top;">
+                                   <table align="center" border="0" style="height:100%">
+                                       <tr>
+                                           <td>
+                                               <font style="color: navy;font-family: bangers;font-size: 30px;">
+                                                Steal Offer : Min. 40% OFF On Beauty Products From just Rs.64 + FREE Shipping
+                                               </font> 
+                                               <br>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>
+                                            <font style="color: navy;font-family: bangers;font-size: 22px;">
+                                                <br><br>Expires on:<font style="color: black;font-family: bangers;font-size: 18px;"> -- / -- / ----</font> 
+                                               </font>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td style="height:13px;vertical-align: bottom;" align="center">
+                                               <form>
+
+                                                    <br>
+                                                   <input type="button" value="Get Coupons Code" class="c_buttons">
+                                               </form>
+                                           </td>
+                                       </tr>
+                                   </table> 
+                                    
+                                </td>
+                                <td align="right">
+                                    <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                        <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                            <tr>
+                                                <td>
+                                                    <div style="border-radius: 100%">
+                                                        <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="border-radius: 100%">
+                                                        <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="border-radius: 100%">
+                                                        <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                <br>
+            </td>
+        </tr>
+
+
+
+<!-- ##########################################################   OFFER CARD 2    ################################################################-->
+
+        <tr>
+                <td style="vertical-align: middle;width:120px" align="right">
+                        <br><br>
+                        <div class="verified_div" id="vdiv">
+                            <br>
+                                <table border="0" align="center">
+                                        <tr>
+                                            <td>
+                                                    <img src="check.png" class="v_image_text" id="vit">                
+                                            </td>
+                                            <td>
+                                                   <font class="v_image_text" id="vit1"> Verified</font> 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                
+                            </div>
+                </td>
+                <td>
+                        <br><br><br>
+                        <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFDE ;border-bottom-right-radius: 40px" class="product_card">
+                            <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                                <tr>
+                                    <td style="width:350px;">
+                                        <img src="products/s_tv.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                                    </td>
+                                    <td style="vertical-align: top;">
+                                       <table align="center" border="0" style="height:100%">
+                                           <tr>
+                                               <td>
+                                                   <font style="color: navy;font-family: bangers;font-size: 30px;">
+                                                        STEAL : Samsung 80cm (32) HD Ready LED TV at Just Rs.16249 + FREE Shipping
+                                                   </font> 
+                                                   <br>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td>
+                                                <font style="color: navy;font-family: bangers;font-size: 22px;">
+                                                    <br><br>Expires on:<font style="color: black;font-family: bangers;font-size: 18px;"> 8 December 2017</font> 
+                                                   </font>
+                                               </td>
+                                           </tr>
+                                           <tr>
+                                               <td style="height:20px;vertical-align: bottom;" align="center">
+                                                   <form>
+    
+                                                        <br><br><br>
+                                                       <input type="button" value="Shop Now" class="c_buttons">
+                                                   </form>
+                                               </td>
+                                           </tr>
+                                       </table> 
+                                        
+                                    </td>
+                                    <td align="right">
+                                        <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                            <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                                <tr>
+                                                    <td>
+                                                        <div style="border-radius: 100%">
+                                                            <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div style="border-radius: 100%">
+                                                            <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div style="border-radius: 100%">
+                                                            <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    <br>
+                </td>
+            </tr>
+
+
+
+
+
+
+<!-- ##########################################################   OFFER CARD 3    ################################################################-->
+
+        <tr>
+            <td style="vertical-align: middle;width:120px" align="right">
+                    <br><br>
+                    <div class="verified_div" id="vdiv">
+                        <br>
+                            <table border="0" align="center">
+                                    <tr>
+                                        <td>
+                                                <img src="check.png" class="v_image_text" id="vit">                
+                                        </td>
+                                        <td>
+                                               <font class="v_image_text" id="vit1"> Verified</font> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            
+                        </div>
+            </td>
+            <td>
+                    <br><br><br>
+                    <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFDE ;border-bottom-right-radius: 40px" class="product_card">
+                        <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                            <tr>
+                                <td style="width:350px;">
+                                    <img src="products/h_and_b.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                                </td>
+                                <td style="vertical-align: top;">
+                                   <table align="center" border="0" style="height:250px;width: 350px">
+                                       <tr>
+                                           <td>
+                                               <font style="color: navy;font-family: bangers;font-size: 30px;">
+                                                Health & Beauty: Dr.Batras
+                                               </font> 
+                                               <br>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td>
+                                            <font style="color: navy;font-family: bangers;font-size: 22px;">
+                                                <br><br>Expires on:<font style="color: black;font-family: bangers;font-size: 18px;"> -- / -- / --</font> 
+                                               </font>
+                                           </td>
+                                       </tr>
+                                       <tr>
+                                           <td style="height:10px;vertical-align: bottom;" align="center">
+                                               <form>
+
+                                                    <br>
+                                                   <input type="button" value="Offer" class="c_buttons" style="">
+                                               </form>
+                                           </td>
+                                       </tr>
+                                   </table> 
+                                    
+                                </td>
+                                <td align="right">
+                                    <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                        <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                            <tr>
+                                                <td>
+                                                    <div style="border-radius: 100%">
+                                                        <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="border-radius: 100%">
+                                                        <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div style="border-radius: 100%">
+                                                        <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            
+
+                            
+                        </table>
+                    </div>
+                <br>
+            </td>
+        </tr>
+
+
+
+
+        
+<!-- ##########################################################   OFFER CARD 4    ################################################################-->
+
+<tr>
+    <td style="vertical-align: middle;width:120px" align="right">
+            <br><br>
+            <div class="verified_div" id="vdiv">
+                <br>
+                    <table border="0" align="center">
+                            <tr>
+                                <td>
+                                        <img src="check.png" class="v_image_text" id="vit">                
+                                </td>
+                                <td>
+                                       <font class="v_image_text" id="vit1"> Verified</font> 
+                                </td>
+                            </tr>
+                        </table>
+                    
+                </div>
+    </td>
+    <td>
+            <br><br><br>
+            <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFDE ;border-bottom-right-radius: 40px" class="product_card">
+                <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                    <tr>
+                        <td style="width:350px;">
+                            <img src="products/doctor.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                        </td>
+                        <td style="vertical-align: top;">
+                           <table align="center" border="0" style="height:250px;width: 350px">
+                               <tr>
+                                   <td>
+                                       <font style="color: navy;font-family: bangers;font-size: 30px;">
+                                        Dr Mickey Mehta
+                                       </font> 
+                                       <br>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <font style="color: navy;font-family: bangers;font-size: 22px;">
+                                        <br><br>Expires on:<font style="color: black;font-family: bangers;font-size: 18px;"> -- / -- / --</font> 
+                                       </font>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td style="height:10px;vertical-align: bottom;" align="center">
+                                       <form>
+
+                                            <br>
+                                           <input type="button" value="Offer" class="c_buttons" style="">
+                                       </form>
+                                   </td>
+                               </tr>
+                           </table> 
+                            
+                        </td>
+                        <td align="right">
+                            <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    
+
+                    
+                </table>
+            </div>
+        <br>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td colspan="2" align="center">
+        <br>
+        <br>
+        <br>
+        <form>
+            <input type="button" value="Load More" class="load_more">
+        </form>
+    </td>
+</tr>
+<tr>
+    <!-- ##########################################################   DEALS TAG STARTS    ################################################################-->
+    <td colspan="2">
+            <br><br><br><br><br><br><br><br><br>
+            <div style="width:100%;height: auto;">
+             <table border="0" style="border-collapse: collapse;width:100%;">
+               
+                 <tr>
+                     <td align="right" style="width:900px;">
+                         <div style="text-align:left;height:80px;width:1000px;background-image: url('deal_tag.jpg');background-repeat: no-repeat;background-size:cover;">
+                            <font style="font-family: Aclonica;color: white;font-weight: bold;background-position-x: center;font-size: 50">
+                                <p style="text-align: left;padding-top: 20px;padding-left:20px"> <i> Deals </i></p>
+                            </font>
+                         </div>
+                         </td>
+                         <td align="left">
+                         <div class="css_triangle" style="border-left-color: #1a1e79">      
+                         </div>
+                     </td>
+                 </tr>
+             </table>
+             <br>
+             <br>
+             <br>   
+            </div>
+    </td>
+</tr>
+
+
+
+
+<!-- ##########################################################   DEALS CARD 1    ################################################################-->
+<tr>
+        <td style="vertical-align: middle;width:120px" align="right">
+                <br><br>
+                <div class="verified_div" id="vdiv">
+                    <br>
+                        <table border="0" align="center">
+                                <tr>
+                                    <td>
+                                            <img src="check.png" class="v_image_text" id="vit">                
+                                    </td>
+                                    <td>
+                                           <font class="v_image_text" id="vit1"> Verified</font> 
+                                    </td>
+                                </tr>
+                            </table>
+                        
+                    </div>
+        </td>
+        <td>
+                <br><br><br>
+                <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFFF ;border-bottom-right-radius: 40px" class="product_card">
+                    <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                        <tr>
+                            <td style="width:350px;">
+                                <img src="products/guitar.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                            </td>
+                            <td style="vertical-align: top;">
+                               <table align="center" border="0" style="height:250px;width: 350px">
+                                   <tr>
+                                       <td>
+                                           <font style="color: black;font-family: bangers;font-size: 30px;">
+                                                82% Claimed!! Hurry Up – Juârez Acoustic Guitar, 38 Inch Cutaway at Rs. 1990
+                                           </font> 
+                                           <br>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                        <font style="color: black;font-family: bangers;font-size: 22px;">
+                                            <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 31 August 2017</font> 
+                                           </font>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="height:10px;vertical-align: bottom;" align="center">
+                                           <form>
+    
+                                                <br>
+                                               <input type="button" value="Shop Here" class="c_buttons" style="">
+                                           </form>
+                                       </td>
+                                   </tr>
+                               </table> 
+                                
+                            </td>
+                            <td align="right">
+                                <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                    <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        
+    
+                        
+                    </table>
+                </div>
+            <br>
+        </td>
+    </tr>
+
+    
+<!-- ##########################################################   DEALS CARD 2    ################################################################-->
+
+    <tr>
+        <td style="vertical-align: middle;width:120px" align="right">
+                <br><br>
+                <div class="verified_div" id="vdiv">
+                    <br>
+                        <table border="0" align="center">
+                                <tr>
+                                    <td>
+                                            <img src="check.png" class="v_image_text" id="vit">                
+                                    </td>
+                                    <td>
+                                           <font class="v_image_text" id="vit1"> Verified</font> 
+                                    </td>
+                                </tr>
+                            </table>
+                        
+                    </div>
+        </td>
+        <td>
+                <br><br><br>
+                <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFFF ;border-bottom-right-radius: 40px" class="product_card">
+                    <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                        <tr>
+                            <td style="width:350px;">
+                                <img src="products/cycle.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                            </td>
+                            <td style="vertical-align: top;">
+                               <table align="center" border="0" style="height:250px;width: 350px">
+                                   <tr>
+                                       <td>
+                                           <font style="color: black;font-family: bangers;font-size: 30px;">
+                                            Get Hero SuperStar 26T 18 Speed Cycle at just Rs.5999 + Extra 10% OFF
+                                           </font> 
+                                           <br>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                        <font style="color: black;font-family: bangers;font-size: 22px;">
+                                            <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 31 August 2017</font> 
+                                           </font>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="height:10px;vertical-align: bottom;" align="center">
+                                           <form>
+    
+                                                <br>
+                                               <input type="button" value="Deal" class="c_buttons" style="">
+                                           </form>
+                                       </td>
+                                   </tr>
+                               </table> 
+                                
+                            </td>
+                            <td align="right">
+                                <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                    <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            <br>
+        </td>
+    </tr>
+
+    
+<!-- ##########################################################   DEALS CARD 3    ################################################################-->
+
+<tr>
+    <td style="vertical-align: middle;width:120px" align="right">
+            <br><br>
+            <div class="verified_div" id="vdiv">
+                <br>
+                    <table border="0" align="center">
+                            <tr>
+                                <td>
+                                        <img src="check.png" class="v_image_text" id="vit">                
+                                </td>
+                                <td>
+                                       <font class="v_image_text" id="vit1"> Verified</font> 
+                                </td>
+                            </tr>
+                        </table>
+                    
+                </div>
+    </td>
+    <td>
+            <br><br><br>
+            <div style="height:252px;width:90%;border-radius: 10px;background-color: #DDFFFF ;border-bottom-right-radius: 40px" class="product_card">
+                <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                    <tr>
+                        <td style="width:350px;">
+                            <img src="products/indicator_cover.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                        </td>
+                        <td style="vertical-align: top;">
+                           <table align="center" border="0" style="height:250px;width: 350px">
+                               <tr>
+                                   <td>
+                                       <font style="color: black;font-family: bangers;font-size: 30px;">
+                                        BikenWear Indicator Cover at Just Rs.106 + Free Shipping
+                                       </font> 
+                                       <br>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <font style="color: black;font-family: bangers;font-size: 22px;">
+                                        <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 31 August 2017</font> 
+                                       </font>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td style="height:10px;vertical-align: bottom;" align="center">
+                                       <form>
+
+                                            <br>
+                                           <input type="button" value="Shop Now" class="c_buttons" style="">
+                                       </form>
+                                   </td>
+                               </tr>
+                           </table> 
+                            
+                        </td>
+                        <td align="right">
+                            <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <br>
+    </td>
+</tr>
+
+<!-- ######################################################## LOAD MORE BUTTON #################################################################-->
+<tr>
+        <td colspan="2" align="center">
+            <br>
+            <br>
+            <br>
+            <form>
+                <input type="button" value="Load More" class="load_more">
+            </form>
+        </td>
+    </tr>
+    <tr>
+
+
+
+
+
+
+
+<tr>
+    <!-- ##########################################################   COUPONS TAG STARTS    ################################################################-->
+    <td colspan="2">
+            <br><br><br><br><br><br><br><br><br>
+            <div style="width:100%;height: auto;">
+             <table border="0" style="border-collapse: collapse;width:100%;">
+                 <tr>
+                     <td align="right" style="width:900px;">
+                         <div style="text-align:left;height:80px;width:1000px;background-image: url('coupon_tag.jpg');background-repeat: no-repeat;background-size:cover;">
+                            <font style="font-family: Aclonica;color: black;font-weight: bold;background-position-x: center;font-size: 50">
+                                <p style="text-align: left;padding-top: 20px;padding-left:20px"> <i> Coupons </i></p>
+                            </font>
+                         </div>
+                         </td>
+                         <td align="left">
+                         <div class="css_triangle" style="border-left-color: #B9D066">      
+                         </div>
+                     </td>
+                 </tr>
+             </table>
+             <br>
+             <br>
+             <br>   
+            </div>
+    </td>
+</tr>
+
+
+    
+<!-- ##########################################################   COUPON CARD 1    ################################################################-->
+
+<tr>
+    <td style="vertical-align: middle;width:120px" align="right">
+            <br><br>
+            <div class="verified_div" id="vdiv">
+                <br>
+                    <table border="0" align="center">
+                            <tr>
+                                <td>
+                                        <img src="check.png" class="v_image_text" id="vit">                
+                                </td>
+                                <td>
+                                       <font class="v_image_text" id="vit1"> Verified</font> 
+                                </td>
+                            </tr>
+                        </table>
+                    
+                </div>
+    </td>
+    <td>
+            <br><br><br>
+            <div style="height:252px;width:90%;border-radius: 10px;background-color: #FFFECD ;border-bottom-right-radius: 40px" class="product_card">
+                <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                    <tr>
+                        <td style="width:350px;">
+                            <img src="products/amazon_gis.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                        </td>
+                        <td style="vertical-align: top;">
+                           <table align="center" border="0" style="height:250px;width: 350px">
+                               <tr>
+                                   <td>
+                                       <font style="color: black;font-family: bangers;font-size: 30px;">
+                                         Day 2!!  Amazon Great Indian Sale Offers Bade Bade Brands Pe Bade Bade Deals
+                                       </font> 
+                                       <br>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <font style="color: black;font-family: bangers;font-size: 22px;">
+                                        <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 12 August 2017</font> 
+                                       </font>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td style="height:10px;vertical-align: bottom;" align="center">
+                                       <form>
+
+                                            <br>
+                                           <input type="button" value="Coupon" class="c_buttons" style="">
+                                       </form>
+                                   </td>
+                               </tr>
+                           </table> 
+                            
+                        </td>
+                        <td align="right">
+                            <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <br>
+    </td>
+</tr>
+
+
+
+
+
+
+
+<!-- ##########################################################   COUPON CARD 2    ################################################################-->
+
+<tr>
+    <td style="vertical-align: middle;width:120px" align="right">
+            <br><br>
+            <div class="verified_div" id="vdiv">
+                <br>
+                    <table border="0" align="center">
+                            <tr>
+                                <td>
+                                        <img src="check.png" class="v_image_text" id="vit">                
+                                </td>
+                                <td>
+                                       <font class="v_image_text" id="vit1"> Verified</font> 
+                                </td>
+                            </tr>
+                        </table>
+                    
+                </div>
+    </td>
+    <td>
+            <br><br><br>
+            <div style="height:252px;width:90%;border-radius: 10px;background-color: #FFFECD ;border-bottom-right-radius: 40px" class="product_card">
+                <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                    <tr>
+                        <td style="width:350px;">
+                            <img src="products/pendrive_sandisk.jpg" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                        </td>
+                        <td style="vertical-align: top;">
+                           <table align="center" border="0" style="height:250px;width: 350px">
+                               <tr>
+                                   <td>
+                                       <font style="color: black;font-family: bangers;font-size: 30px;">
+                                        SanDisk Ultra Dual SDDD2 16 GB at Rs.589 + Free Shipping
+                                       </font> 
+                                       <br>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <font style="color: black;font-family: bangers;font-size: 22px;">
+                                        <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 31 August 2017</font> 
+                                       </font>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td style="height:10px;vertical-align: bottom;" align="center">
+                                       <form>
+
+                                            <br>
+                                           <input type="button" value="Shop" class="c_buttons" style="">
+                                       </form>
+                                   </td>
+                               </tr>
+                           </table> 
+                            
+                        </td>
+                        <td align="right">
+                            <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        <br>
+    </td>
+</tr>
+
+
+
+
+
+<!-- ##########################################################   COUPON CARD 3    ################################################################-->
+
+<tr>
+    <td style="vertical-align: middle;width:120px" align="right">
+            <br><br><br><br><br>
+            <div class="verified_div" id="vdiv">
+                
+                    <table border="0" align="center">
+                            <tr>
+                                <td>
+                                    <br>
+                                        <img src="check.png" class="v_image_text" id="vit">                
+                                </td>
+                                <td>
+                                        <br>
+                                       <font class="v_image_text" id="vit1"> Verified</font> 
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    
+                </div>
+                
+                <div class="verified_div" id="vdiv" style="border:2px solid red;">
+                    <br>
+                        <table border="0" align="center">
+                                <tr>
+                                    <td>
+                                            <img src="exclusive_icon.jpg" class="v_image_text" style="border-radius:20px;"id="vit">                
+                                    </td>
+                                    <td>
+                                           <font class="v_image_text" id="vit1" style="color:red;font-family: Aclonica;font-weight: bold;"> Exclusive</font> 
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        
+                    </div>
+    </td>
+    <td>
+           
+            <div style="height:252px;width:90%;border-radius: 10px;background-color: #FFFECD ;border-bottom-right-radius: 40px" class="product_card">
+                <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                    <tr>
+                        <td style="width:350px;">
+                            <img src="flight_ticket.png" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                        </td>
+                        <td style="vertical-align: top;">
+                           <table align="center" border="0" style="height:250px;width: 350px">
+                               <tr>
+                                   <td>
+                                       <font style="color: black;font-family: bangers;font-size: 30px;">
+                                        Upto 2000 Rupees Discount On International Flights
+                                       </font> 
+                                       <br>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <font style="color: black;font-family: bangers;font-size: 22px;">
+                                        <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 31 December 2017</font> 
+                                       </font>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td style="height:10px;vertical-align: bottom;" align="center">
+                                       <form>
+
+                                            <br>
+                                           <input type="button" value="Coupon" class="c_buttons" style="">
+                                       </form>
+                                   </td>
+                               </tr>
+                           </table> 
+                            
+                        </td>
+                        <td align="right">
+                            <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="border-radius: 100%">
+                                                <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </td>
+</tr>
+
+
+
+
+<!-- ##########################################################   COUPON CARD 4    ################################################################-->
+
+<tr>
+        <td style="vertical-align: top;width:120px" align="right">
+                <br><br><br><br>
+                <div class="verified_div" id="vdiv">
+                    
+                        <table border="0" align="center">
+                                <tr>
+                                    <td>
+                                        <br>
+                                            <img src="check.png" class="v_image_text" id="vit">                
+                                    </td>
+                                    <td>
+                                            <br>
+                                           <font class="v_image_text" id="vit1"> Verified</font> 
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                        
+                    </div>
+                    
+                    <div class="verified_div" id="vdiv" style="border:2px solid red;">
+                       
+                            <table border="0" align="center">
+                                    <tr>
+                                        <td><br>
+                                                <img src="exclusive_icon.jpg" class="v_image_text" style="border-radius:20px;"id="vit">                
+                                        </td>
+                                        <td>
+                                               <font class="v_image_text" id="vit1" style="color:red;font-family: Aclonica;font-weight: bold;"> <br>Exclusive</font> 
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            
+                        </div>
+        </td>
+        <td>
+               
+                <div style="height:252px;width:90%;border-radius: 10px;background-color: #FFFECD ;border-bottom-right-radius: 40px" class="product_card">
+                    <table border="0" style="border-collapse: collapse;width:100%" align="left">
+                        <tr>
+                            <td style="width:350px;">
+                                <img src="flight_ticket.png" height="250px" width="350px" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+                            </td>
+                            <td style="vertical-align: top;">
+                               <table align="center" border="0" style="height:250px;width: 350px">
+                                   <tr>
+                                       <td>
+                                           <font style="color: black;font-family: bangers;font-size: 30px;">
+                                                Upto 500 Rupees Discount On Domestic Flights
+                                           </font> 
+                                           <br>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                        <font style="color: black;font-family: bangers;font-size: 22px;">
+                                            <br><br>Expires on:<font style="color: navy;font-family: bangers;font-size: 18px;"> 30 September 2017</font> 
+                                           </font>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td style="height:10px;vertical-align: bottom;" align="center">
+                                           <form>
+    
+                                                <br>
+                                               <input type="button" value="Coupon" class="c_buttons" style="">
+                                           </form>
+                                       </td>
+                                   </tr>
+                               </table> 
+                                
+                            </td>
+                            <td align="right">
+                                <div style="height:250px;width:80px;background-color: #FFEB3B;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;border-top-right-radius: 10px" class="product_card">
+                                    <table border="0" style="border-collapse: collapse;width:100%;text-align: center;" align="center">
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-share w3-large " ></i>Share</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-comment w3-large"></i>Discuss</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div style="border-radius: 100%">
+                                                    <a href="#" style="text-decoration: none"> <i class="fa fa-save w3-large"></i>Save</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            <br>
+        </td>
+    </tr>
+    
+    <tr>
+            <td colspan="2" align="center">
+ 
+                <form>
+                    <input type="button" value="Load More" class="load_more">
+                </form>
+            </td>
+        </tr>
+        <tr>
+    </table>
+<br>
+<br>
+<br>
+<br>
+</div>
+</center>
+</div>
+<table style="width:100%;height: 200px;" id="void_table" border="0"> 
+        <tr>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+    </table>  
+
+
+<!-- ##########################################################   FOOTER    ################################################################-->
+<table style="width:100%;height: 200px;" id="void_table" border="0"> 
+    <tr>
+        <td>
+            
+        </td>
+    </tr>
+</table>
+
+<table align="bottom" style="width:100%;height:auto;border-collapse:collapse; " border="0">
+    <tr>
+        <td style="width:100px;height:180px;vertical-align: bottom" align="bottom">
+            <div  class="about_us_div" >
+                <table align="center" border="0" style="text-align: center;">
+                    <tr>
+                        <td>
+                            <font style="font-size:22px;font-family: Aclonica;font-weight: bold;color:white"> About us</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer_row">
+                                <a href="#" style="text-decoration: none"><font class="about_us_font"> Our Team</font></a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                            <td class="footer_row">
+                                    <a href="#" style="text-decoration: none"><font class="about_us_font">FaQ's</font><a>
+
+                            </td>
+    
+                        </tr>
+                        <tr>
+                                <td class="footer_row">
+                                        <a href="#" style="text-decoration: none"><font class="about_us_font"> Career With Us</font></a>
+                                       
+                                </td>
+        
+                            </tr>
+                            <tr>
+                                    <td class="footer_row">
+                                            <a href="#" style="text-decoration: none"><font class="about_us_font">Media Contact</font></a>
+                                         
+                                    </td>
+            
+                                </tr>
+                                <tr>
+                                        <td class="footer_row">
+                                                <a href="#" style="text-decoration: none"><font class="about_us_font">Investors</font></a>
+                                              
+                                        </td>
+                
+                                    </tr>
+                                    <tr>
+                                            <td class="footer_row">
+                                                    <a href="#" style="text-decoration: none"><font class="about_us_font">Contact Us</font></a>
+                                                 
+                                            </td>
+                    
+                                        </tr>
+                </table>
+            </div>
+        </td>
+
+
+
+
+
+
+
+
+
+        <td style="width:100px;height:auto;vertical-align: bottom" align="bottom">
+
+
+
+
+                <div  class="about_us_div" style="background-color: #FFA726;">
+    
+    
+    
+    
+    
+                    <table align="center" style="text-align: center;" >
+                        <tr>
+                            <td>
+                                <font style="font-size:22px;font-family: aclonica;font-weight: bold;color:black"> Support</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="footer_row">
+                                    <a href="#" style="text-decoration: none"><font class="about_us_font"> Advertise With Us</font></a>
+                            </td>
+    
+                        </tr>
+                        <tr>
+                                <td class="footer_row">
+                                        <a href="#" style="text-decoration: none">  <font class="about_us_font">Campus Ambassador</font></a>
+    
+                                </td>
+        
+                            </tr>
+                            <tr>
+                                    <td class="footer_row">
+                                            <a href="#" style="text-decoration: none"> <font class="about_us_font"> Feedback</font></a>
+                                           
+                                    </td class="footer_row">
+            
+                                </tr>
+                                <tr>
+                                        <td class="footer_row">
+                                                <a href="#" style="text-decoration: none">   <font class="about_us_font">Win A Gift Cards</font></a>
+                                             
+                                        </td>
+                
+                                    </tr>
+                                    <tr>
+                                            <td class="footer_row">
+                                                    <a href="#" style="text-decoration: none">  <font class="about_us_font">Terms & Conditions</font></a>
+                                                  
+                                            </td>
+                    
+                                        </tr>
+                                        <tr>
+                                                <td class="footer_row">
+                                                        <a href="#" style="text-decoration: none">  <font class="about_us_font">Privacy Policy</font></a>
+                                                     
+                                                </td>
+                        
+                                            </tr>
+                    </table>
+                </div>
+            </td>
+
+
+
+
+
+
+
+
+
+
+            <td style="width:100px;height:auto;vertical-align: bottom" align="bottom">
+
+
+
+
+                    <div  class="about_us_div" style="background-color: #00cdcd">
+        
+        
+        
+        
+        
+                        <table align="center" border="0" style="width:100%;text-align: center;">
+                            <tr>
+                                <td>
+                                    <font style="font-size:22px;font-family: aclonica;font-weight: bold;color:white"> Never Miss</font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="footer_row">
+                                        <font class="about_us_font"> <br>Your Email <br></font>
+                                </td>
+        
+                            </tr>
+                            <tr>
+                                    <td class="footer_row">
+                                        <br>
+                                     <input type="text" class="signup_input" >
+        
+                                    </td>
+            
+                                </tr>
+                                <tr>
+                                        <td class="footer_row">
+                                            
+                                             <from>
+                                                 <input type="submit" value="SignUp" class="signup_button">
+                                             </from>
+                                               
+                                        </td>
+                        </table>
+                    </div>
+                </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+                <div style="width:100%;background-color:  #434FB6;height:230px;bottom: 0px;color:whitesmoke;">
+                        <table style="border-collapse: collapse;width:100%;text-align: center;" border="0">
+                            <tr>
+                                <td>
+                    <font style="color:whitesmoke;font-family: aclonica">
+                           <br><br><br><br> Made with love from <font style="color:#ef8900;font-size: 22px">IN</font><font style="font-size: 22px">D</font><font style="color:green;font-size: 22px">IA.</font>
+                    </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <font style="color:whitesmoke;font-family: aclonica">   Freeshopping a division of sahu technologies </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <font style="color:whitesmoke;font-family: aclonica"> Copyright 2015-2020. Freeshopping. All Rights Reserved. All content, trademarks and logos are copyright of their respective owners </font>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                            <br>
+                                      <font style="color:#143A76;font-size: 50px;font-weight: bold;">Free</font><font style="font-weight: bold;font-size: 50px;color:#DC5419">Shopping</font>
+                                      </font>
+                                        </td>
+                                </tr>
+                        </table>
+                    </div>
+
+        </td>
+    </tr>
+   
+</table>
+
+
+</div>
+ </body>  
+</html>

@@ -1,0 +1,343 @@
+        .loginn
+        {
+            visibility: hidden;
+            color:white;
+            opacity:0;
+            text-decoration: none;
+            font-size: 20px;
+        }
+                               
+        .head_elements /*the right top slide bars*/
+        {
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px; 
+            background-color: crimson;
+            transition:0.5s;
+            color:crimson;
+            width: 27%;
+            height: auto;
+            text-align:center;
+        }
+        .head_elements:hover  
+        {
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            transition:0.5s;
+            color:white;
+            background-color: crimson;
+            width: 80%;
+            height: auto;
+            visibility: visible;
+            text-align: center;    
+        }
+
+        .head_elements:hover  .loginn /*the right top slide bars till here*/
+        {
+
+            
+            transition:0.5s;
+            color:white;
+            background-color: crimson;
+            width: 100%;
+            height: auto;
+            text-align: right;
+            visibility: visible;
+            opacity: 1;    
+        }
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+                       
+.head_elements1 /*the right top slide bars*/
+{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px; 
+    background-color: yellow;
+    transition:0.5s;
+    color:yellow;
+    width: 24%;
+    height: auto;
+    text-align:center;
+}
+.head_elements1:hover  
+{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:0.5s;
+    color:#8a8a8a;
+    background-color: yellow;
+    width: 80%;
+    height: auto;
+    visibility: visible;
+    text-align: center;    
+}
+
+.head_elements1:hover  .loginn /*the right top slide bars till here*/
+{
+
+    
+    transition:0.5s;
+    color:#8a8a8a;
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    visibility: visible;
+    opacity: 1;    
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+ 
+.head_elements2 /*the right top slide bars*/
+{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px; 
+    background-color: #00CDCD;
+    transition:0.5s;
+    color:#00CDCD;
+    width: 20%;
+    height: auto;
+    text-align:center;
+}
+.head_elements2:hover  
+{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    transition:0.5s;
+    color:white;
+    background-color: #00CDCD;
+    width: 80%;
+    height: auto;
+    visibility: visible;
+    text-align: center;    
+}
+
+.head_elements2:hover  .loginn /*the right top slide bars till here*/
+{
+
+    
+    transition:0.5s;
+    color:white;
+    background-color:#00CDCD;
+    width: 100%;
+    height: auto;
+    text-align: right;
+    visibility: visible;
+    opacity: 1;    
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+ 
+.head_elements3 /*the right top slide bars*/
+{
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px; 
+    background-color:#FFA726 ;
+    transition:0.8s;
+    color:#FFA726;
+    width: 10%;
+    height: auto;
+    text-align:center;
+}
+.head_elements3:hover  
+{
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    transition:0.4s;
+    color:white;
+    background-color:#FFA726;
+    width: 80%;
+    height: auto;
+    visibility: visible;
+    text-align: center;    
+}
+
+.arrow_img
+{
+    max-width:40px;
+    max-height:30px;
+}
+.head_elements3:hover .arrow_img
+{
+    max-width: 0;
+    
+}
+
+.head_elements3:hover .fa-google
+{
+    transition:0.3s;
+    visibility: visible;
+}
+.head_elements3:hover .fa-instagram
+{
+    transition:0.3s;
+    visibility: visible;
+}
+.head_elements3:hover .fa-linkedin
+{
+    transition:0.3s;
+    visibility: visible;
+}
+.head_elements3:hover .fa-foursquare
+{
+    transition:0.3s;
+    visibility: visible;
+}
+.head_elements3:hover .fa-pinterest
+{
+    transition:0.3s;
+    visibility: visible;
+}
+.head_elements3:hover .fa-youtube
+{
+    transition:0.3s;
+    visibility: visible;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+.change_img
+{
+background-image: url('right_arrow.png');
+}
+.change_img:hover
+{
+background-image: url("lock.png");
+}
+/*------------------socialmedia-------------------------------------------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+  opacity: 1;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    border-radius: 100%;
+    transition:0.3s;
+    background: #FFA726;
+    color: black;
+  }
+    .fa-facebook:hover{
+    transition:0.3s;
+    background: #3B5999;
+    color: white;
+  }
+
+
+
+  .fa-twitter {
+    visibility: visible;
+    border-radius: 100%;
+     transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+  .fa-twitter:hover{
+    visibility: visible;
+    transition:0.3s;
+    background: #55ACEE;
+    color: white;
+  }
+
+
+  .fa-linkedin {
+    visibility:hidden;
+    border-radius: 100%;
+    transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+  .fa-linkedin:hover {
+    visibility:hidden;
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-google {
+    visibility:hidden;
+    border-radius: 100%;
+    transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+
+  .fa-google:hover {
+    visibility:hidden;
+    background: #dd4b39;
+    color: white;
+  }
+
+
+  .fa-youtube {
+    visibility:hidden;
+    border-radius: 100%;
+    transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+  
+  .fa-instagram {
+    visibility:hidden;
+    border-radius: 100%;
+    transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+  
+  .fa-pinterest {
+    visibility:hidden;
+    border-radius: 100%;
+    transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+  .fa-foursquare {
+    visibility:hidden;
+    border-radius: 100%;
+    transition: 0.3s; 
+    background: #FFA726;
+    color: black;
+  }
+
+  .fa-foursquare:hover {
+    visibility:hidden;
+    background: #45bbff;
+    color: white;
+  }
+
+  .fa-youtube:hover {
+    visibility:hidden;
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram:hover {
+    visibility:hidden;
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest:hover {
+    visibility:hidden;
+    background: #cb2027;
+    color: white;
+  }
+
+
+
+
